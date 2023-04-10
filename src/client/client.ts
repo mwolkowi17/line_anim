@@ -31,8 +31,15 @@ const material = new THREE.LineBasicMaterial( { color: 0x00ff00 } );
 
 const points = [];
 points.push( new THREE.Vector3( - 10, 0, 0 ) );
-points.push( new THREE.Vector3( 0, 10, 0 ) );
+points.push( new THREE.Vector3( 0, 15, 0 ) );
 //points.push( new THREE.Vector3( 10, 0, 0 ) );
+points.push( new THREE.Vector3( 10, 0, 0 ) );
+points.push( new THREE.Vector3( 0, 0, 10 ) );
+points.push( new THREE.Vector3( - 10, 0, 0 ) );
+points.push( new THREE.Vector3( 10, 0, 0 ) );
+points.push( new THREE.Vector3( 0, 0, 10 ) );
+points.push( new THREE.Vector3( 0, 15, 0 ) );
+
 
 const geometry = new THREE.BufferGeometry().setFromPoints( points );
 
@@ -53,8 +60,8 @@ function onWindowResize() {
 function animate() {
     requestAnimationFrame(animate)
 
-   line.rotation.x += 0.005
-   line.rotation.y += 0.005
+   //line.rotation.x += 0.005
+   //line.rotation.y += 0.005
 
    controls.update()
 
