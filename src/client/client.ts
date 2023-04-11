@@ -30,15 +30,15 @@ document.body.appendChild(renderer.domElement)
 const material = new THREE.LineBasicMaterial( { color: 0x00ff00 } );
 
 const points = [];
-points.push( new THREE.Vector3( - 10, 0, 0 ) );
-points.push( new THREE.Vector3( 0, 15, 0 ) );
+points.push( new THREE.Vector3( -7.5, 0, 0 ) );
+points.push( new THREE.Vector3( 0, 20, 3 ) );
 //points.push( new THREE.Vector3( 10, 0, 0 ) );
-points.push( new THREE.Vector3( 10, 0, 0 ) );
-points.push( new THREE.Vector3( 0, 0, 10 ) );
-points.push( new THREE.Vector3( - 10, 0, 0 ) );
-points.push( new THREE.Vector3( 10, 0, 0 ) );
-points.push( new THREE.Vector3( 0, 0, 10 ) );
-points.push( new THREE.Vector3( 0, 15, 0 ) );
+points.push( new THREE.Vector3( 7.5, 0, 0 ) );
+points.push( new THREE.Vector3( 0, 0, 12 ) );
+points.push( new THREE.Vector3( - 7.5, 0, 0 ) );
+points.push( new THREE.Vector3( 7.5, 0, 0 ) );
+points.push( new THREE.Vector3( 0, 0, 12 ) );
+points.push( new THREE.Vector3( 0, 20, 3 ) );
 
 
 const geometry = new THREE.BufferGeometry().setFromPoints( points );
